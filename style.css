@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+:root {
+    --main-color-pink: rgb(216, 34, 216);
+}
+
+body {
+    background-color: #EEEEEE;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+header {
+    max-width: 1170px;
+}
+
+.top-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.dropdown-content {
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+
+    header {
+        margin: 40px;
+    }
+
+    .icon-bars {
+        display: none;
+    }
+
+    .dropdown-content {
+        display: inline-flex;
+    }
+
+    .dropdown-content>a {
+        margin-left: 30px;
+        text-decoration: none;
+        color: grey;
+        font-size: larger;
+        font-weight: bold;
+    }
+
+    .dropdown-content>.pink-color {
+        color: var(--main-color-pink);
+    }
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+h3 {
+    text-transform: uppercase;
+    color: var(--main-color-pink);
+    letter-spacing: 1px;
+}
+
+section {
+    max-width: 1170px;
+    padding-left: 20px;
+    padding-top: 30px;
+}
+
+.launching-soon-container {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+}
+
+.graphic {
+    position: absolute;
+    width: 190px;
+    height: 278px;
+    object-fit: cover;
+}
+
+.content {
+    display: block;
+    width: 250px;
+}
+
+.content p {
+    width: 250px;
+    font-size: larger;
+}
+
+button {
+    display: block;
+    font-size: larger;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 3px solid transparent;
+    border-image: url(assets/assets/background.svg) 50 stretch;
+}
+
+.sign-up {
+    background-image: url(assets/assets/background.svg);
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+.companies-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    margin: 30px;
+}
+
+.companies-container img {
+    height: 30px;
+    width: 120px;
+    object-fit: cover;
+    object-position: 15% 100%;
+    padding-bottom: 15px;
+    padding-right: 30px;
+}
+
+.NFT-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.NFT-container .left {
+    display: flex;
+    flex: 50%;
+    align-items: flex-start;
+}
+
+.NFT-container .right {
+    display: flex;
+    flex: 50%;
+    justify-content: end;
+    align-items: flex-end;
+}
+
+#inline-price {
+    display: inline-flex;
+    align-items: center;
+}
+
+.NFT-series {
+    color: orange;
+    font-size: small;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.NFT-bid {
+    font-size: small;
+}
+
+.NFT-title {
+    padding-top: 10px;
+}
